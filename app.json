@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ai-chatbot-demo",
-    "slug": "ai-chatbot-demo",
+    "name": "ai-chatbot-ahstudy",
+    "slug": "AH Study Chatbot",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
