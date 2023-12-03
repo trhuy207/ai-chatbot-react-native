@@ -50,6 +50,9 @@ export default function ChatScreen() {
   const getBardResp = (msg) => {
     setLoading(true)
     GlobalApi.getBardApi(msg).then(resp => {
+      console.log(resp.data.resp[1].content)
+    })
+    GlobalApi.getBardApi(msg).then(resp => {
       if (resp.data.resp[1].content) {
         setLoading(false)
         const chatAIResp = {
@@ -64,7 +67,7 @@ export default function ChatScreen() {
           }
         }
         setMessages(previousMessages => GiftedChat.append(previousMessages, chatAIResp))
-
+        console.log(resp.data.resp[1].content)
       }
       else {
         setLoading(false)
@@ -121,7 +124,7 @@ export default function ChatScreen() {
       containerStyle={{
         padding: 3,
 
-        backgroundColor: '#671ddf',
+        backgroundColor: '#11b7d4',
         color: '#fff',
       }}
 
