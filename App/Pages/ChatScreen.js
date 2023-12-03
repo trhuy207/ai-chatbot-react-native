@@ -50,9 +50,6 @@ export default function ChatScreen() {
   const getBardResp = (msg) => {
     setLoading(true)
     GlobalApi.getBardApi(msg).then(resp => {
-      console.log(resp.data.resp[1].content)
-    })
-    GlobalApi.getBardApi(msg).then(resp => {
       if (resp.data.resp[1].content) {
         setLoading(false)
         const chatAIResp = {
