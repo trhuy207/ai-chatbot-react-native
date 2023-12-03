@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ai-chatbot-ahstudy",
-    "slug": "AH Study Chatbot",
+    "name": "AH STUDY CHATBOT",
+    "slug": "ai-chatbot-ahstudy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,6 +26,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": ""
+    "description": "",
+    "extra": {
+      "eas": {
+        "projectId": "83ebe1c3-8538-4c47-86bd-3f0a1a8920a0"
+      }
+    }
   }
 }
