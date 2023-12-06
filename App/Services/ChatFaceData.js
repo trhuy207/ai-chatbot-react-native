@@ -20,18 +20,4 @@ export default chatFaceData=[
         primary:'#3B96D2',
         secondary:''
     },
-    {
-        id:4,
-        name:'Estor',
-        image:'https://res.cloudinary.com/dknvsbuyy/image/upload/v1685709886/image_18_893d24cebc.png',
-        primary:'#37474F',
-        secondary:''
-    },
-    {
-        id:5,
-        name:'Pega',
-        image:'https://res.cloudinary.com/dknvsbuyy/image/upload/v1685709886/image_23_211d7370cb.png',
-        primary:'#2473FE',
-        secondary:''
-    },
 ]
