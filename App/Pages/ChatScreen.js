@@ -26,7 +26,7 @@ export default function ChatScreen() {
     setMessages([
       {
         _id: 1,
-        text: 'Hello, I am ' + ChatFaceData[id].name + ', How Can I help you?',
+        text: 'Xin chào, Tôi là ' + ChatFaceData[id].name + ', Tôi có thể giúp gì cho bạn?',
         createdAt: new Date(),
         user: {
           _id: 2,
@@ -50,11 +50,11 @@ export default function ChatScreen() {
   const getBardResp = (msg) => {
     setLoading(true)
     GlobalApi.getBardApi(msg).then(resp => {
-      if (resp.data.resp[1].content) {
+      if (resp.data.choices[0].message.content) {
         setLoading(false)
         const chatAIResp = {
           _id: Math.random() * (9999999 - 1),
-          text: resp.data.resp[1].content,
+          text: resp.data.choices[0].message.content,
           createdAt: new Date(),
           user: {
             _id: 2,
@@ -64,13 +64,13 @@ export default function ChatScreen() {
           }
         }
         setMessages(previousMessages => GiftedChat.append(previousMessages, chatAIResp))
-        console.log(resp.data.resp[1].content)
+        console.log(resp.data.choices[0].message.content)
       }
       else {
         setLoading(false)
         const chatAIResp = {
           _id: Math.random() * (9999999 - 1),
-          text: "Sorry, I can not help with it",
+          text: "Xin lỗi, Tôi chưa thể giúp bạn trả lời câu hỏi này!",
           createdAt: new Date(),
           user: {
             _id: 2,

@@ -2,21 +2,21 @@ export default chatFaceData=[
     {
         id:1,
         name:'Adam',
-        image:'https://res.cloudinary.com/dknvsbuyy/image/upload/v1685709886/image_22_409561b953.png',
+        image:'https://phattriennanglucso.com/chatface.png',
         primary:'#3B96D2',
         secondary:''
     },
     {
         id:2,
         name:'Adam',
-        image:'https://res.cloudinary.com/dknvsbuyy/image/upload/v1685709886/image_22_409561b953.png',
+        image:'https://phattriennanglucso.com/chatface.png',
         primary:'#3B96D2',
         secondary:''
     },
     {
         id:3,
         name:'Adam',
-        image:'https://res.cloudinary.com/dknvsbuyy/image/upload/v1685709886/image_22_409561b953.png',
+        image:'https://phattriennanglucso.com/chatface.png',
         primary:'#3B96D2',
         secondary:''
     },

@@ -21,12 +21,12 @@ export default function HomeScreen() {
         id ? setSelectedChatFace(ChatFaceData[id]) : setSelectedChatFace(ChatFaceData[0])
     }
     return (
-        <View style={{ alignItems: 'center', paddingTop: 90 }}>
-            <Text style={[{ color: selectedChatFace?.primary }, { fontSize: 30, }]}>Hello,</Text>
-            <Text style={[{ color: selectedChatFace?.primary }, { fontSize: 30, fontWeight: 'bold' }]}>I am {selectedChatFace.name}</Text>
+        <View style={{ alignItems: 'center', paddingTop: 90, backgroundColor: '#fff', flex: 1 }}>
+            <Text style={[{ color: selectedChatFace?.primary }, { fontSize: 30, }]}>Xin chào,</Text>
+            <Text style={[{ color: selectedChatFace?.primary }, { fontSize: 30, fontWeight: 'bold' }]}>Tôi là {selectedChatFace.name}</Text>
             <Image source={{ uri: selectedChatFace.image }}
                 style={{ height: 150, width: 150, marginTop: 20 }} />
-            <Text style={{ marginTop: 30, fontSize: 25 }}>How Can I help you?</Text>
+            <Text style={{ marginTop: 30, fontSize: 25 }}>Tôi có thể giúp gì cho bạn?</Text>
 
             <TouchableOpacity style={[{ backgroundColor: selectedChatFace.primary }
                 , {
@@ -34,7 +34,7 @@ export default function HomeScreen() {
                 borderRadius: 100, alignItems: 'center'
             }]}
                 onPress={() => navgitaion.navigate('chat')}>
-                <Text style={{ fontSize: 16, color: '#fff' }}>Let's Chat</Text>
+                <Text style={{ fontSize: 16, color: '#fff' }}>Chat Ngay!!</Text>
             </TouchableOpacity>
         </View>
     )
