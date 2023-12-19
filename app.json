@@ -24,7 +24,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.quochuyph207.aichatbotahstudy",
-      "versionCode": 2
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png"
