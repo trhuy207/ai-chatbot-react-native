@@ -23,8 +23,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.quochuyph207.aichatbotahstudy",
-      "versionCode": 3
+      "package": "com.quochuyph207.aichatbotahstudy"
     },
     "web": {
       "favicon": "./assets/favicon.png"
