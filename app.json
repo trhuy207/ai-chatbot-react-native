@@ -16,7 +16,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.quochuyph207.aichatbotahstudy"
+      "bundleIdentifier": "com.quochuyph207.aichatbotahstudy",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
