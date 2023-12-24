@@ -13,7 +13,9 @@ export default function HomeNavigation() {
     <Stack.Navigator screenOptions={{}}>
         <Stack.Screen name="home" component={HomeScreen} 
         options={{headerShown:false}} />
-        <Stack.Screen name="chat" component={ChatScreen} />
+        <Stack.Screen name="chat" component={ChatScreen}
+        options={{headerTitle: 'AH Study Chatbot'}}
+        />
     </Stack.Navigator>
   )
 }

@@ -17,26 +17,25 @@ export default function ChatScreen() {
 
   useEffect(() => {
     checkFaceId();
-  }, [])
-
-  const checkFaceId = async () => {
-    const id = await AsyncStorage.getItem('chatFaceId');
-    CHAT_BOT_FACE = id ? ChatFaceData[id].image : ChatFaceData[0].image;
-    setChatFaceColor(ChatFaceData[id].primary);
+    CHAT_BOT_FACE = require('../Assets/chat.png');
     setMessages([
       {
         _id: 1,
-        text: 'Xin chào, Tôi là ' + ChatFaceData[id].name + ', Tôi có thể giúp gì cho bạn?',
+        text: 'Xin chào, Tôi là AH Study Chatbot Tôi có thể giúp gì cho bạn?',
         createdAt: new Date(),
         user: {
           _id: 2,
           name: 'React Native',
           avatar: CHAT_BOT_FACE,
-
         },
-
       },
     ])
+  }, [])
+
+  const checkFaceId = async () => {
+    const id = await AsyncStorage.getItem('chatFaceId');
+    CHAT_BOT_FACE = require('../Assets/chat.png');
+    setChatFaceColor('#2A87FF');
   }
 
   const onSend = useCallback((messages = []) => {
@@ -93,10 +92,10 @@ export default function ChatScreen() {
         {...props}
         wrapperStyle={{
           right: {
-            backgroundColor: '#2c66b6',
+            backgroundColor: '#2A87FF',
 
           }, left: {
-
+            backgroundColor: '#DCE7FF',
           }
 
         }}
@@ -106,8 +105,7 @@ export default function ChatScreen() {
             padding: 2
           },
           left: {
-            color: '#235190',
-            // fontSize:20,
+            color: '#000',
             padding: 2
           }
         }}
@@ -121,11 +119,11 @@ export default function ChatScreen() {
       containerStyle={{
         padding: 3,
 
-        backgroundColor: '#2c66b6',
-        color: '#fff',
+        backgroundColor: '#fff',
+        color: '#000',
       }}
 
-      textInputStyle={{ color: "#fff" }}
+      textInputStyle={{ color: "#000" }}
     />
   }
 
@@ -135,7 +133,7 @@ export default function ChatScreen() {
         {...props}
       >
         <View style={{ marginRight: 10, marginBottom: 5 }}>
-          <FontAwesome name="send" size={24} color="white" resizeMode={'center'} />
+          <FontAwesome name="send" size={24} color="cyan" resizeMode={'center'} />
 
         </View>
       </Send>

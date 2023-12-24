@@ -21,10 +21,10 @@ export default function HomeScreen() {
         id ? setSelectedChatFace(ChatFaceData[id]) : setSelectedChatFace(ChatFaceData[0])
     }
     return (
-        <View style={{ alignItems: 'center', paddingTop: 90, backgroundColor: '#fff', flex: 1 }}>
+        <View style={{ alignItems: 'center', paddingTop: 90, backgroundColor: '#fff', flex: 1, justifyContent: 'center' }}>
             <Text style={[{ color: selectedChatFace?.primary }, { fontSize: 30, }]}>Xin chào,</Text>
             <Text style={[{ color: selectedChatFace?.primary }, { fontSize: 30, fontWeight: 'bold' }]}>Tôi là {selectedChatFace.name}</Text>
-            <Image source={{ uri: selectedChatFace.image }}
+            <Image source={require('../Assets/chatface.png')}
                 style={{ height: 150, width: 150, marginTop: 20 }} />
             <Text style={{ marginTop: 30, fontSize: 25 }}>Tôi có thể giúp gì cho bạn?</Text>
 
