@@ -6,8 +6,6 @@ import ChatScreen from "../Pages/ChatScreen";
 
 const Stack=createNativeStackNavigator();
 
-
-
 export default function HomeNavigation() {
   return (
     <Stack.Navigator screenOptions={{}}>
