@@ -2,7 +2,7 @@
   "expo": {
     "name": "AH STUDY CHATBOT",
     "slug": "ai-chatbot-ahstudy",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.quochuyph207.aichatbotahstudy",
-      "buildNumber": "2"
+      "buildNumber": "4"
     },
     "android": {
       "adaptiveIcon": {
