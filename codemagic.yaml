@@ -1,0 +1,21 @@
+workflows:
+  react-native-ios:
+  environment:
+    groups:
+      # ...
+    vars:
+      BUNDLE_ID: "com.quochuyph207.aichatbotahstudy"
+      XCODE_WORKSPACE: "{{}}" # <-- Name of your Xcode workspace
+      XCODE_SCHEME: "{{}}" # <-- Name of your Xcode scheme
+  scripts:
+    # ...
+    - name: Build ipa for distribution
+      script: |
+        xcode-project build-ipa \
+          --workspace "$CM_BUILD_DIR/ios/$XCODE_WORKSPACE" \
+          --scheme "$XCODE_SCHEME"
+  artifacts:
+    - build/ios/ipa/*.ipa
+    - /tmp/xcodebuild_logs/*.log
+    - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+    - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
