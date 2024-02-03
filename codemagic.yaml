@@ -1,8 +1,6 @@
 workflows:
   react-native-ios:
     environment:
-      groups:
-        # ...
       vars:
         BUNDLE_ID: "com.quochuyph207.aichatbotahstudy"
         XCODE_WORKSPACE: "{{}}" # <-- Name of your Xcode workspace
